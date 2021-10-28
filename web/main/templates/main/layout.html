@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/css/uikit.min.css" />
+    <title>{% block title %}{%endblock%}</title>
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <ul>
+                <li>მთავარი</li>
+                <li>ჩვენ</li>
+                <li>კონტაქტი</li>
+            </ul>
+        </div> 
+        {% block headera %}{% endblock %}  
+    </header>
+    <main>{% block main%}{% endblock %} </main>
+    <aside>{% block aside%}{% endblock %} </aside>
+        {% block content %}{% endblock %}
+     <footer>{% block footer %}{% endblock %} </footer> 
+     <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit-icons.min.js"></script>  
+</body>
+</html>
